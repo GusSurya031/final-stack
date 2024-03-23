@@ -1,0 +1,895 @@
+/*   font-family: "Raleway", sans-serif; */
+/*   font-family: "Montserrat", sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Styling body start */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fefdf9;
+  color: #001c03;
+  padding-top: 97px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+/* Styling header start */
+header.navbar-container {
+  width: 1440px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #fefdf9;
+  box-shadow: 0px 10px 11px -10px rgba(51, 57, 52, 0.3);
+  padding: 28px 64px;
+  z-index: 9;
+}
+
+header.navbar-container .logo img {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-width: 95px;
+  max-width: 150px;
+  width: 100%;
+}
+
+header.navbar-container nav ul {
+  display: flex;
+  gap: 4rem;
+}
+
+header.navbar-container nav ul li {
+  list-style: none;
+}
+
+header.navbar-container nav ul li a {
+  text-decoration: none;
+  color: #001c03;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: 800;
+  text-underline-offset: 10px;
+}
+
+header.navbar-container .login-register {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header.navbar-container .login-register a {
+  text-decoration: none;
+  color: #334934;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fefdf9;
+  padding: 10px 28px;
+  border-radius: 8px;
+  border: 1px solid #001c03;
+  transition: all 0.15s ease-in;
+}
+
+header.navbar-container .login-register a#registerButton {
+  background-color: #334934;
+  color: #fefdf9;
+  cursor: pointer;
+
+}
+
+header.navbar-container .login-register a#loginButton:hover {
+  border: 1px solid #001c03;
+  background-color: #334934;
+  cursor: pointer;
+  color: #fefdf9;
+}
+
+header.navbar-container .button-navigation {
+  display: none;
+}
+
+header.navbar-container .navigation-mobile {
+  display: none;
+}
+
+/* Styling main start */
+main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main section {
+  padding-inline: 64px;
+  margin: 36px 0;
+}
+
+/* Styling section 1 start */
+
+section .container-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+section .container-hero .container-description {
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section .container-hero figure img {
+  max-width: 450px;
+  width: 100%;
+}
+
+section .container-hero .container-description h1 {
+  font-size: 3.25rem;
+}
+
+section .container-hero .container-description p {
+  font-size: 1.5rem;
+  line-height: 164%;
+}
+
+section .container-hero .container-store a img {
+  max-height: 60px;
+  height: 100%;
+}
+
+section .container-sub-hero {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5rem;
+}
+
+section .container-sub-hero .card-article {
+  border: 1px solid #001c03;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 1.5rem;
+  border-radius: 12px;
+}
+
+section .container-sub-hero .card-article .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .container-sub-hero .card-article h3 {
+  font-size: 48px;
+}
+
+section .container-sub-hero .card-article p {
+  font-size: 18px;
+}
+
+/* Styling section 2 start */
+section .title-section-2 {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+section .title-section-2 h2 {
+  font-size: 2.5rem;
+}
+
+section .title-section-2 p {
+  font-size: 1.2rem;
+  line-height: 164%;
+}
+
+section .container-pengaduan {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+section .container-pengaduan .card-pengaduan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  border-radius: 12px;
+  background-color: #334934;
+  padding: 28px;
+  color: #fefdf9;
+}
+
+section .container-pengaduan .title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+section .container-pengaduan .title .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: #fefdf9;
+  border-radius: 8px;
+}
+
+section .container-pengaduan .title h3 {
+  font-size: 2rem;
+}
+
+section .container-pengaduan p {
+  font-size: 1rem;
+  line-height: 164%;
+  font-weight: 300;
+}
+
+/* Styling section 3 start */
+section h2.title-section-3 {
+  margin-block: 3rem;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+section .container-section-3 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+section .container-section-3 figure img {
+  max-width: 640px;
+  width: 100%;
+}
+
+section .container-section-3 .description > p {
+  font-size: 1.2rem;
+  line-height: 164%;
+  text-align: right;
+}
+
+section .container-section-3 .description .container-tutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: end;
+  margin-top: 1rem;
+}
+
+section .container-section-3 .description .container-tutorial .card-tutorial {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px 14px;
+  background-color: #334934;
+  color: #fefdf9;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 164%;
+}
+
+section
+  .container-section-3
+  .description
+  .container-tutorial
+  .card-tutorial
+  .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fefdf9;
+  border-radius: 6px;
+}
+
+/* Styling section 4 start */
+section.container-section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+section.container-section-4 h2.title-section-4 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+section.container-section-4 .progress-bar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #fefdf9 90%, transparent 10% 100%),
+    conic-gradient(#001c03 74%, #b3b2ac 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.container-section-4 .progress-bar .progress-score {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+section.container-section-4 .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+section.container-section-4 .description p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 164%;
+}
+
+/* Section 5 start */
+section.container-section-5 {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #334934;
+  border-radius: 24px;
+  color: #fefdf9;
+}
+
+section.container-section-5 .description {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.container-section-5 .description h3 {
+  font-size: 4rem;
+}
+
+section.container-section-5 .description p {
+  font-size: 1.2rem;
+  line-height: 164%;
+  font-weight: 300;
+}
+
+section.container-section-5 .description button {
+  max-width: 240px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: #fefdf9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #001c03;
+  border: 3px solid transparent;
+  transition: all 0.15s ease-in;
+}
+
+section.container-section-5 .description button:hover {
+  border: 3px solid #fefdf9;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fefdf9;
+}
+
+section.container-section-5 .image-mobile {
+  display: none;
+}
+
+/* Styling Aside Start */
+aside {
+  position: relative;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+aside .container {
+  display: flex;
+  flex-direction: column;
+  margin: 64px auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 475px;
+  width: 100%;
+  padding: 32px;
+  border: 1px solid #001c03;
+  border-radius: 24px;
+}
+
+aside header {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+aside header figcaption h4 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+aside article table tr th {
+  text-align: left;
+}
+
+aside article table tr th,
+td {
+  padding: 28px 12px;
+  /* background-color: #92a493; */
+  /* border-bottom: 1px solid rgb(3, 3, 3); */
+}
+
+aside article table tr .right {
+  text-align: right;
+}
+
+aside article table tr #fontMontserrat {
+  padding: 12 12px;
+}
+
+aside article table tr #fontRaleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+aside article table tr td span {
+  border: 1px solid #001c03;
+  padding: 10px;
+}
+
+aside article table tr td span:nth-child(2) {
+  background-color: #001c03;
+  color: #fefdf9;
+}
+
+aside img.sideLogo {
+  position: absolute;
+  width: 450px;
+}
+
+aside img.kiri {
+  bottom: -50px;
+  left: 0;
+}
+
+aside img.kanan {
+  transform: scaleX(-1);
+  bottom: -50px;
+
+  right: 0px;
+}
+
+footer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 32px;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+footer .logo figure img {
+  max-width: 150px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 164%;
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  main section {
+    padding-inline: 32px;
+    margin: 24px 0;
+  }
+  header.navbar-container {
+    padding: 28px 32px;
+  }
+  header.navbar-container nav ul {
+    gap: 2.5rem;
+  }
+
+  header.navbar-container .login-register {
+    gap: 1rem;
+  }
+
+  section .container-hero {
+    gap: 1rem;
+  }
+
+  section .container-hero .container-description h1 {
+    font-size: 2.5rem;
+  }
+
+  section .container-hero .container-description p {
+    font-size: 1.2rem;
+  }
+  section .container-sub-hero {
+    gap: 1.2rem;
+  }
+  section .container-pengaduan {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  section h2.title-section-3 {
+    margin-block: 2rem;
+  }
+  section .container-section-3 {
+    gap: 1.2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  section .container-section-3 .description {
+    grid-column: span 2;
+  }
+  section .container-section-3 figure img {
+    height: 100%;
+  }
+  section.container-section-4 h2.title-section-4 {
+    margin-top: 1.5rem;
+  }
+  section.container-section-4 .progress-bar {
+    width: 250px;
+    height: 250px;
+  }
+  section.container-section-4 .description {
+    line-height: 164%;
+  }
+  section.container-section-4 .description p:nth-child(1) {
+    font-size: 1rem;
+  }
+  section.container-section-5 {
+    border-radius: 24px 24px 0 0;
+  }
+
+  section.container-section-5 .description h3 {
+    font-size: 2.5rem;
+  }
+  section.container-section-5 .image img {
+    /* max-width: 1000px; */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container nav ul {
+    gap: 1.5rem;
+  }
+  header.navbar-container .login-register {
+    gap: 0.5rem;
+  }
+  header.navbar-container .login-register a {
+    padding: 10px 5px;
+  }
+  section .container-hero .container-description h1 {
+    font-size: 2rem;
+  }
+  section .container-hero .container-description p {
+    font-size: 1rem;
+  }
+  section .container-hero .container-store a img {
+    width: 120px;
+  }
+  section .container-sub-hero {
+    gap: 0.8rem;
+  }
+  section .container-sub-hero .card-article {
+    padding: 10px 15px;
+  }
+  section .container-sub-hero .card-article .icon svg {
+    width: 45px;
+  }
+  section .container-sub-hero .card-article .description h3 {
+    font-size: 2rem;
+  }
+  section .container-sub-hero .card-article .description p {
+    font-size: 0.8rem;
+  }
+  section .title-section-2 h2 {
+    font-size: 2rem;
+  }
+  section .title-section-2 p {
+    font-size: 1rem;
+  }
+
+  section .container-pengaduan .title h3 {
+    font-size: 1.6rem;
+  }
+
+  section .container-pengaduan p {
+    font-size: 0.9rem;
+  }
+
+  section h2.title-section-3 {
+    font-size: 2rem;
+    margin-block: 1.5rem;
+  }
+  section .container-section-3 .description > p {
+    font-size: 1rem;
+  }
+  section .container-section-3 .description .container-tutorial .card-tutorial {
+    font-size: 0.9rem;
+  }
+  section.container-section-4 h2.title-section-4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  section.container-section-4 .progress-bar {
+    width: 200px;
+    height: 200px;
+  }
+  section.container-section-4 .progress-bar .progress-score {
+    font-size: 2rem;
+  }
+  section.container-section-4 .progress-bar .progress-score svg {
+    width: 32px;
+  }
+  section.container-section-4 .progress-bar > p {
+    font-size: 0.9rem;
+  }
+  section.container-section-5 .description h3 {
+    font-size: 2rem;
+  }
+  section.container-section-5 .description p {
+    font-size: 1rem;
+  }
+  aside .container {
+    margin: 32px auto;
+  }
+
+  aside header figcaption h4 {
+    font-size: 3rem;
+  }
+
+  aside article table tr th,
+  td {
+    padding: 14px 8px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header.navbar-container .button-navigation {
+    display: block;
+  }
+
+  header.navbar-container nav,
+  header.navbar-container .login-register {
+    display: none;
+  }
+
+  header.navbar-container {
+    flex-wrap: wrap;
+  }
+
+  header.navbar-container .navigation-mobile {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #f7f6f2;
+    padding-block: 1rem;
+    /* transition: all 2s ease-in; */
+  }
+
+  header.navbar-container nav.hidden {
+    display: none;
+  }
+
+  header.navbar-container .navigation-mobile ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  header.navbar-container .navigation-mobile ul li {
+    color: #fefdf9;
+    text-align: center;
+    padding-block: 0.5rem;
+    width: 100%;
+  }
+
+  header.navbar-container .navigation-mobile ul li:nth-child(odd) {
+    background-color: #e4e4de;
+  }
+  header.navbar-container .navigation-mobile ul li a {
+    color: #001c03;
+  }
+
+  header.navbar-container .navigation-mobile .button-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #e4e4de;
+    padding: 1rem;
+  }
+
+  header.navbar-container .navigation-mobile .button-mobile a {
+    text-decoration: none;
+    color: #334934;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fefdf9;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #001c03;
+  }
+
+  header.navbar-container .navigation-mobile a#registerButton {
+    background-color: #334934;
+    color: #fefdf9;
+  }
+  section .container-sub-hero {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section .container-pengaduan {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    text-align: center;
+  }
+  section .container-pengaduan .title {
+    flex-direction: column;
+  }
+  section h2.title-section-3 {
+    font-size: 2rem;
+    margin-block: 1rem;
+    text-align: center;
+  }
+  section .container-section-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  section .container-section-3 figure img {
+    max-height: 250px;
+    width: 100%;
+  }
+  section .container-section-3 .description > p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section .container-hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  section .container-sub-hero {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  section.container-section-5 {
+    flex-direction: column;
+  }
+  section.container-section-5 .description {
+    align-items: center;
+    text-align: center;
+    padding-block: 2rem;
+  }
+  section.container-section-5 .image-mobile {
+    display: block;
+    background: url("../img/mockup-brand-3.png");
+    background-position: top;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+  section.container-section-5 .image {
+    display: none;
+  }
+  aside article table tr .color {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section {
+    padding-inline: 16px;
+    margin: 12px 0;
+  }
+  section .container-sub-hero {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  section .title-section-2 {
+    margin-top: 2rem;
+  }
+  section .title-section-2 h2 {
+    font-size: 1.5rem;
+  }
+  section .title-section-2 p {
+    font-size: 0.9rem;
+  }
+  section .container-pengaduan .title h3 {
+    font-size: 1.2rem;
+  }
+  section .container-pengaduan p {
+    font-size: 0.8rem;
+  }
+  section h2.title-section-3 {
+    font-size: 1.5rem;
+  }
+  section .container-section-3 .description > p {
+    font-size: 0.9rem;
+  }
+  section .container-section-3 .description .container-tutorial .card-tutorial {
+    font-size: 0.8rem;
+  }
+  section.container-section-4 h2.title-section-4 {
+    font-size: 1.5rem;
+  }
+  section.container-section-4 .description p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  section.container-section-4 .description {
+    font-size: 0.8rem;
+  }
+  section.container-section-5 .description button {
+    padding: 8px;
+  }
+  aside .container {
+    width: 80%;
+  }
+  aside header figcaption h4 {
+    font-size: 2rem;
+  }
+
+  aside article table tr th,
+  td {
+    font-size: 0.8rem;
+    padding: 10px 8px;
+  }
+}
